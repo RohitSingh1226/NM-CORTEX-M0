@@ -1,0 +1,11 @@
+-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0 -c
+-fno-rtti -funsigned-char -fshort-enums -fshort-wchar
+-gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality 
+-I./RTE/_ARMCM0
+-IC:/Users/faker/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include
+-IC:/Users/faker/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/DSP/Include
+-IC:/Users/faker/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/DSP/PrivateInclude
+-IC:/Users/faker/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/Device/ARM/ARMCM0/Include
+-IC:/Users/faker/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/Device/Include
+-D__UVISION_VERSION="529" -D_RTE_ -DARMCM0
+-o ./armcm0_debug/arm_bayes_example_f32.o -MD "arm_bayes_example_f32.c"
